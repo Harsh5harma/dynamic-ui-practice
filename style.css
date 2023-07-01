@@ -1,0 +1,58 @@
+body{
+  margin: 0px;
+  border:0px;
+  height: 100vh;
+  background-color: rgba(27, 33, 41, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  width: 100vw;
+  height:10vh;
+  background-color: black;
+  color:white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size:40px;
+}
+
+.display {
+  width: 1731px;
+  height: 839px;
+  display: flex;
+  align-items: center;
+  margin-left:94px;
+  margin-right: 94px;
+  margin-top:10px
+}
+.viewplace {
+  width: 1532px;
+  height: 839px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:white;
+}
+.back:hover, .forward:hover{
+  background-color: black;
+}
+.indices{
+  margin-top:10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width:250px;
+}
+.img{
+  width: 15px;
+  height: 15px;
+  border-radius: 9px;
+  background-color: white;
+  border:solid black 2px;
+}
+.img.active {
+  background-color: black;
+}

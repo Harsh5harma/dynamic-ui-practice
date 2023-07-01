@@ -1,0 +1,54 @@
+body {
+  padding: 50px;
+  height: 100vh;
+}
+
+.trigger{
+  width: 400px;
+  height: 50px;
+  background-color: black;
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:0px 10px 0px;
+  font-size: 20px;
+}
+
+.dropdown{
+  position:relative;
+  width: 400px;
+}
+.options{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  width:400px;
+  background-color: rgba(221, 221, 221, 0.807);
+  position: absolute;
+  top: calc(100% + .25rem);
+  border-radius: .25rem;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.1);
+  opacity: 0;
+  pointer-events: none;
+  transition:  opacity 350ms ease-in-out, transform 350ms ease-in-out;
+  transform: translateY(-10px);
+}
+.options.active{
+  opacity:1;
+  transform: translateY(10px);
+}
+
+
+.op{
+  padding-left: 10px;
+  line-height: 30px;
+}
+.op:hover {
+  background-color: rgba(143, 143, 143, 0.807);
+}
+.arrow{
+  width: 20px;
+  height: 20px;
+}
+
